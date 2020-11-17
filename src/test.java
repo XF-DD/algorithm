@@ -5,13 +5,14 @@ import java.util.HashMap;
 
 public class test {
     public static void main(String[] args) {
-
+        test01();
     }
 
     private static void test01(){
-        BigDecimal b1 = new BigDecimal("10");
+        BigDecimal b1 = new BigDecimal("7");
         BigDecimal b2 = new BigDecimal("7");
-        b1 = b1.subtract(b2);
-        System.out.println(b1);
+        b2 = b2.subtract(b1);
+        int i = b2.compareTo(BigDecimal.ZERO);
+        System.out.println(i);
     }
 }

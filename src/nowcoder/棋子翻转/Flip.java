@@ -1,8 +1,5 @@
 package nowcoder.棋子翻转;
 
-import com.sun.org.apache.regexp.internal.RE;
-
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
