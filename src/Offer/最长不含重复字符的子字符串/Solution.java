@@ -8,11 +8,18 @@ public class Solution {
         HashMap<Character, Integer> map = new HashMap<>();
         int max = 0, index = -1;
         for (int i = 0; i < s.length(); i++) {
-            if(map.containsKey(s.charAt(i)))
+            if(map.containsKey(s.charAt(i))) {
                 index = Math.max(index,map.get(s.charAt(i)));
+            }
             max = Math.max(max,i-index);
             map.put(s.charAt(i),i);
         }
         return max;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int abacd = solution.lengthOfLongestSubstring("abacd");
+        System.out.println(abacd);
     }
 }
