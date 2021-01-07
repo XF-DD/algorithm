@@ -47,7 +47,9 @@ class UnionFind {
     }
 
     private int find(int p) {
-        if (p != record[p]) record[p] = find(record[p]);
+        if (p != record[p]) {
+            record[p] = find(record[p]);
+        }
         return record[p];
     }
 
@@ -55,7 +57,9 @@ class UnionFind {
     void union(int p, int q) {
         int pid = find(p);
         int qid = find(q);
-        if (pid == qid) return;
+        if (pid == qid) {
+            return;
+        }
         record[pid] = qid;
         count--;//联通的岛屿算成一个
     }
