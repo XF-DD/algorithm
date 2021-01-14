@@ -25,7 +25,7 @@ public class Solution {
     /**
      * 并查集
      */
-    class UnionFind {
+    static class UnionFind {
         int[] roots;
         int size;
 
