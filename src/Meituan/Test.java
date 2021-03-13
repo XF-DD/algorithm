@@ -9,11 +9,12 @@ import java.util.Scanner;
 public class Test {
     void t1(){
         Scanner in = new Scanner((System.in));
-        int s = in.nextInt();
-        int s2 = in.nextInt();
+        String s = in.next();
+        String s2 = in.next();
         in.nextLine();
         int s3 = in.nextInt();
-        int s4 = in.nextInt();
+        String s4 = in.next();
+        in.nextLine();
         System.out.println(s);
         System.out.println(s2);
         System.out.println(s3);
