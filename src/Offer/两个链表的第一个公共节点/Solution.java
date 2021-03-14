@@ -14,7 +14,7 @@ public class Solution {
         ListNode tempA = headA;
         ListNode tempB = headB;
         boolean flag = false;
-        while (tempA.val != tempB.val){
+        while (tempA != tempB){
             tempA = tempA.next;
             if(tempA == null){
                 if(flag){
